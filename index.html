@@ -17,20 +17,21 @@
 
      <div class="main">
       <div class="input">
-        <button>
+        <button class="generate">
           <img src="./assets//images/svg/generate.svg" alt="generate">
         </button>
-        <input type="url" name="link" placeholder="type something here" required>
+        <input type="url" name="link" id="link" placeholder="type something here" autocomplete="off" required>
       </div>
-      <div class="qrcode">
-
-      </div>
-
+      <canvas class="qrcode">
+      </canvas>
       <button class="download">
         Download
         <img src="./assets/images/svg/download-icon.svg" alt="download">
       </button>
      </div>
   </div>
+
+  <script src="./vendor/qr-code.js"></script>
+  <script src="./assets/javascripts/index.js"></script>
 </body>
 </html>

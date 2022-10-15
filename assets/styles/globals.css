@@ -40,7 +40,7 @@
   .main {
     width: 100%;
     max-width: 26.875rem;
-    height: 18.563rem;
+    height: auto;
     background: rgba(255, 255, 255, 0.3);
     border-radius: 0.6rem;
     box-sizing: border-box;
@@ -48,7 +48,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2rem;
+    gap: 1.3rem;
   }
 
   .input {
@@ -100,9 +100,17 @@
 
   .qrcode {
     width: 7.718rem;
-    height: 7.718rem;
+    height: 9rem;
     background: rgba(255, 255, 255, 0.6);
+    object-fit: cover;
     border-radius: 10px;
+    object-position: center;
+  }
+  .qrcode img {
+    width: 100%;
+    /* height: 123.49; */
+
+    background: rgba(255, 255, 255, 0.6);
   }
 
   .download {
