@@ -94,6 +94,8 @@
 
   .input button:focus,
   .download:focus {
+    outline: none;
+    border: none;
     border-radius: 30px;
     box-shadow: 0 0 0 3px var(--color-secondary);
   }
