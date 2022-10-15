@@ -38,6 +38,7 @@
 
   .main {
     width: 100%;
+    max-width: 26.875rem;
     height: 18.563rem;
     background: rgba(255, 255, 255, 0.3);
     border-radius: 0.6rem;
@@ -51,13 +52,14 @@
 
   .input {
     width: 100%;
+    max-width: 15.475rem;
     height: 2.5rem;
     background-color: #fff;
     border-radius: 30px;
     box-sizing: border-box;
     padding: 0.4rem 0.5rem 0.4rem 0.6rem;
     display: flex;
-    position: relative;
+    justify-content: space-between;
   }
 
   .input input {
@@ -65,7 +67,7 @@
     background-color: transparent;
     outline: none;
     border: none;
-    padding: 0.4rem;
+    padding: 0.6rem;
     border-radius: 30px;
   }
 
@@ -77,11 +79,12 @@
     box-sizing: border-box;
     background-color: var(--color-prmary);
     border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.75rem;
+    height: 1.75rem;
     border-radius: 30px;
-    color: white;
-    font-weight: bold;
-    font-size: 10px;
-    width: 4.375rem;
   }
 
   .qrcode {
