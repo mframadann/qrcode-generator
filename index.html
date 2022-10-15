@@ -5,8 +5,30 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>QRcode generator - mframadann</title>
+
+  <link rel="stylesheet" href="./assets/styles/globals.css">
 </head>
 <body>
-  <h1>Development mode</h1>
+  <div class="container">
+     <div class="header">
+      <h1>QRcode Generator</h1>
+      <h2>by mframadann</h2>
+     </div>
+
+     <div class="main">
+      <div class="input">
+        <input type="url" name="link" placeholder="type something here" required>
+        <button>Generate</button>
+      </div>
+      <div class="qrcode">
+
+      </div>
+
+      <button class="download">
+        Download
+        <img src="./assets/images/svg/download-icon.svg" alt="">
+      </button>
+     </div>
+  </div>
 </body>
 </html>
