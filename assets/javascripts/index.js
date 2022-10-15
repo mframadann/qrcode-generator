@@ -19,7 +19,7 @@ class QrCodeGnerations {
       canvas,
       link.value,
       {
-        width: 150,
+        width: 200,
         margin: 2,
       },
       (err) => {
