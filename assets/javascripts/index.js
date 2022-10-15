@@ -1,3 +1,9 @@
+/**
+ * Authors: @mframadann
+ * "Code something every day"
+ * Please dont remove this watermark
+ */
+
 const GenerateButton = document.querySelector(".generate");
 const DownloadQrCode = document.querySelector(".download");
 const LinkInput = document.querySelector("#link");
