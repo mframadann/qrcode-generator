@@ -88,6 +88,7 @@
     border-radius: 30px;
     transition: all;
     transition-duration: 500ms;
+    position: sticky;
   }
 
   .input button:focus,
