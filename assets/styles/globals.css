@@ -60,6 +60,7 @@
     padding: 0.4rem 0.5rem 0.4rem 0.6rem;
     display: flex;
     justify-content: space-between;
+    position: relative;
   }
 
   .input input {
@@ -76,7 +77,6 @@
   }
 
   .input button {
-    box-sizing: border-box;
     background-color: var(--color-prmary);
     border: none;
     display: flex;
