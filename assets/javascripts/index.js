@@ -22,10 +22,16 @@ class QrCodeGnerations {
     );
   }
 
-  DownloadQrCodes(elements, canvas) {
+  RedirecttoAuthor() {
+    window.open("https://instagram.com/mframadann", "_blank");
+  }
+
+  DownloadQrCodes(elements, canvas, link) {
     elements.href = canvas.toDataURL("image/png");
     elements.download = "QRcode-[mframadan].PNG";
     elements.click();
+
+    link.value = "";
   }
 }
 
@@ -36,5 +42,11 @@ GenerateButton.addEventListener("click", () => {
 
 DownloadQrCode.addEventListener("click", () => {
   const QRCodeGenerator = new QrCodeGnerations();
-  QRCodeGenerator.DownloadQrCodes(DownloadElements, QrCode);
+  QRCodeGenerator.DownloadQrCodes(DownloadElements, QrCode, LinkInput);
 });
+
+function Redirect() {
+  const QRCodeGenerator = new QrCodeGnerations();
+
+  QRCodeGenerator.RedirecttoAuthor();
+}
