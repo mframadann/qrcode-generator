@@ -9,26 +9,30 @@
   <link rel="stylesheet" href="./assets/styles/globals.css">
 </head>
 <body>
-  <div class="container">
-     <div class="header">
-      <h1>QRcode Generator</h1>
-      <h2 onclick="Redirect()">by mframadann</h2>
-     </div>
-
-     <div class="main">
-      <div class="input">
-        <button class="generate">
-          <img src="./assets//images/svg/generate.svg" alt="generate">
+  <div class="blob-container">
+    <span class="top-blob"></span>
+    <span class="bottom-blob"></span>
+    <div class="container">
+       <div class="header">
+        <h1>QRcode Generator</h1>
+        <h2 onclick="Redirect()">by mframadann</h2>
+       </div>
+  
+       <div class="main">
+        <div class="input">
+          <button class="generate">
+            <img src="./assets//images/svg/generate.svg" alt="generate">
+          </button>
+          <input type="url" name="link" id="link" placeholder="type something here" autocomplete="off" required>
+        </div>
+        <canvas class="qrcode">
+        </canvas>
+        <button class="download">
+          Download
+          <img src="./assets/images/svg/download-icon.svg" alt="download">
         </button>
-        <input type="url" name="link" id="link" placeholder="type something here" autocomplete="off" required>
-      </div>
-      <canvas class="qrcode">
-      </canvas>
-      <button class="download">
-        Download
-        <img src="./assets/images/svg/download-icon.svg" alt="download">
-      </button>
-     </div>
+       </div>
+    </div>
   </div>
 
   <script src="./vendor/qr-code.js"></script>

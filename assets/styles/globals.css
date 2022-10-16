@@ -8,20 +8,53 @@
 :root {
   --color-prmary: #3b71fe;
   --color-secondary: #3b72fe5f;
+  --color-background-primary: #d3dcf7;
+  --color-blob: #aec2f8;
 }
+
+.blob-container {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--color-background-primary);
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.top-blob,
+.bottom-blob {
+  width: 52.563rem;
+  height: 52.563rem;
+  background-color: var(--color-blob);
+  border-radius: 50%;
+  position: absolute;
+  z-index: 0;
+}
+
+.top-blob {
+  top: -45%;
+  left: -30%;
+}
+
+.bottom-blob {
+  bottom: -55%;
+  right: -25%;
+}
+
 .container {
   width: 100%;
   height: 100vh;
   box-sizing: border-box;
   padding: 2rem;
   padding-top: 7rem;
-  background-image: url("../images/png/bg-dekstop.png");
-  object-fit: cover;
-  /* background-repeat: no-repeat; */
+  background-color: transparent;
+  backdrop-filter: blur(20px);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: fixed;
+  z-index: 50;
 }
 
 .header {
@@ -34,6 +67,8 @@
   text-align: center;
   margin-bottom: 2rem;
   font-size: 2rem;
+  position: relative;
+  z-index: 50;
 }
 
 .header h2 {
@@ -55,6 +90,8 @@
   align-items: center;
   gap: 1.3rem;
   margin: auto;
+  z-index: 50;
+  position: relative;
 }
 
 .input {
@@ -133,16 +170,45 @@
 }
 
 @media screen and (max-width: 500px) {
+  .blob-container {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--color-background-primary);
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+  }
+
+  .top-blob,
+  .bottom-blob {
+    width: 29.5rem;
+    height: 29.5rem;
+    background-color: var(--color-blob);
+    border-radius: 50%;
+    position: absolute;
+    z-index: 0;
+  }
+
+  .top-blob {
+    top: -17%;
+    left: -25%;
+  }
+
+  .bottom-blob {
+    bottom: -17%;
+    right: -25%;
+  }
+
   .container {
+    z-index: 99999;
     width: 100%;
     height: 100vh;
     box-sizing: border-box;
     padding: 2rem;
     padding-top: 7rem;
-    background-image: url("../images/png/bg-mobile.png");
-    object-fit: cover;
-    background-repeat: no-repeat;
     display: block;
+    background-color: transparent;
+    backdrop-filter: blur(20px);
   }
   .header {
     display: flex;
@@ -154,6 +220,7 @@
     text-align: center;
     margin-bottom: 2rem;
     font-size: medium;
+    position: relative;
   }
 
   .header h2 {
@@ -173,6 +240,7 @@
     flex-direction: column;
     align-items: center;
     gap: 1.3rem;
+    position: relative;
   }
 
   .input {
